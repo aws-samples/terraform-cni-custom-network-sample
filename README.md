@@ -1,17 +1,34 @@
-## My Project
+# Sample EKS CNI Custom Network with Security Group for Pods
 
-TODO: Fill this README out!
+## What does this do?
 
-Be sure to:
+This repo hosts sample terraform code to create an EKS cluster with CNI custom networking alongside security group for pods.
 
-* Change the title in this README
-* Edit your repository description on GitHub
+Resources created are highlighted in following diagram:
 
-## Security
+![Diagram](/architecture.jpg)
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+## Steps to run
 
-## License
+Checkout this repo and trigger terraform build through:
+
+``` bash
+
+terraform init
+
+terraform apply
+```
+
+Type "yes" and the build will start.
+
+### Note
+
+By default, the resources are created in `ap-southeast-2` region.
+
+# Security
+
+See CONTRIBUTING for more information.
+
+# License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
-
